@@ -1,0 +1,47 @@
+nav {
+    background-color: black;
+    color: white;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:active, a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+.projectExamples {
+    color: black;
+}
+
+.displayNone {
+    display: none;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: 0;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
