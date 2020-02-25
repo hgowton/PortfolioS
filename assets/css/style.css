@@ -2,6 +2,12 @@ html, body {
   height: 100%;
 }
 
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 3px 0px 8px 20px;
+}
+
 body {
     background: #007bff;  
     background: linear-gradient(to right, #0062E6, #33AEFF);
@@ -57,13 +63,13 @@ a:hover, a:active {
 
 footer {
     width: 100%;
+    text-align: right;
 }
 
 /* CODE for media query with MAX WIDTH 980px */
 @media screen and (max-width: 845){
     .extend {
         height: 30px;
-        width: 100%
     }
 }    
 
@@ -76,5 +82,4 @@ footer {
 .infoSize {
     margin: 10px 20px 0px 20px;
 }
-
 }
