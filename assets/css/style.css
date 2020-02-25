@@ -17,6 +17,7 @@ img {
     float: left;
     padding: 2px;
     clip-path: ellipse(40% 45% at 50% 50%);
+    shape-outside: ellipse(130px 110px at 50% 50%);
 }
 
 .goTo {
