@@ -13,7 +13,7 @@ body {
     background: linear-gradient(to right, #0062E6, #33AEFF);
 }  
 
-img {
+.auth-image, .pMain {
     float: left;
     padding: 2px;
     clip-path: ellipse(40% 45% at 50% 50%);
@@ -57,13 +57,15 @@ a:hover, a:active {
     height: 330px;
     width: 100%
 }
+
 .navOptions:hover, .navOptions:active {
     text-decoration: none;
 }
 
 .displayNone {
     display: none;
-}    
+}  
+
 .infoSize {
     padding: 20px 40px 0px 0px;
 }
@@ -73,6 +75,26 @@ a:hover, a:active {
     color: lightblue;
     font-size: 20px;
 } 
+
+.pMain {
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.projs h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
 
 footer {
     width: 100%;

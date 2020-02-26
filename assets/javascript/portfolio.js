@@ -2,23 +2,23 @@
 $(document).ready(function(){
     var projs = [
         { t: "Mood Food",
-            d: "empty description",
-            image: "./assets/media/HeadShot.jpg",
+            d: "Upload a URL of an image from Google, your age, and select a specific location.  3 specific recipes, restaurants, or cocktail locations will be selected specifically for your mood.  Click on the image button for each option to learn more about your Mood Food suggestions.",
+            img: ["./assets/media/mood1.png", "./assets/media/moodFood.jpg"],
             repo: "https://github.com/hgowton/MoodFood",
             actL: "https://hgowton.github.io/MoodFood/"},
         { t: "Humanitarian Game",
-            d: "empty description",
-            image: "./assets/media/HeadShot.jpg",
-            repo: "https://github.com/hgowton/unit-4-game",
+            d: "An interactive game, where each round the user needs to determine how many Humanitarian Points they can earn by helping each animal.  Reach the round goal and bank your points.  Bank enough points to become an Expert Humanitarian.",
+            img: ["./assets/media/humanitarian.png", "./assets/media/pets.jpg"],
+            repo: "https://github.com/hgowton/unit-4-game", 
             actL: "https://hgowton.github.io/unit-4-game/"},
         { t: "Giphy API",
-            d: "empty description",
-            image: "./assets/media/HeadShot.jpg",
+            d: "Return images of specific emotions or create your own emotion button.  Click on each button to see the image come to life.",
+            img: ["./assets/media/giphyAPI.png", "./assets/media/colors.jpg"],
             repo: "https://github.com/hgowton/GiphyAPI",
             actL: "https://hgowton.github.io/GiphyAPI/"},
         { t: "Trivia Game",
-            d: "empty description",
-            image: "./assets/media/HeadShot.jpg",
+            d: "Test your knowledge of the largest biome on the planet.  Be careful to log in your answer before the clock hits 0.",
+            img: ["./assets/media/oceanT.png", "./assets/media/trivia.jpg"],
             repo: "https://github.com/hgowton/TriviaGame",
             actL: "https://hgowton.github.io/TriviaGame/"}
     ]
@@ -27,6 +27,8 @@ $(document).ready(function(){
 
     $("#aboutOpt").on("click", function(about) {
         about.preventDefault();
+        emptyP();
+
         $("#aboutOpt").addClass("active")
         $("#about").removeClass("displayNone")
         $("#contact").addClass("displayNone")
@@ -42,9 +44,37 @@ $(document).ready(function(){
         $("#giphyOpt").removeClass("active")
         $("#triviaOpt").removeClass("active")
     });
+
+    function emptyP (){        
+        $(".projectType").empty();
+        $("#projects").empty();
+    }
     
+    function type (){
+        emptyP();
+        var tProj = $("<h3>").text("Projects");
+        $("#projects").append(tProj);
+        var iProj = $("<p>").text("Click on any image below to be taken to one of my active project sites or click on a Project Name in the navigation bar to delve deeper into each one.")
+        $("#projects").append(iProj);
+
+
+    for(i = 0; i < projs.length; i++) {
+        console.log("testing")
+            var p = $("<div>").addClass("projs");
+            var plink = $("<a target='_blank'>").attr("href", projs[i].actL)
+            var pImage = $("<img class='image-fluid'>").attr("src", projs[i].img[1]).attr("alt", "static image of project").addClass("pMain");
+            // var titleP = $("<h3>").text(projs[i].t).addClass("titleP")
+            //check this out for understanding
+            plink.append(pImage)
+            // plink.append(titleP)
+            p.append(plink)
+            $("#projects").append(p)
+        }
+    }
+
     $("#projectsOpt").on("click", function(project) {
         project.preventDefault();
+        emptyP();
         $("#projectsOpt").addClass("active")
         $("#projects").removeClass("displayNone")
         $("#about").addClass("displayNone")
@@ -59,10 +89,11 @@ $(document).ready(function(){
         $("#humanOpt").removeClass("active")
         $("#giphyOpt").removeClass("active")
         $("#triviaOpt").removeClass("active")
+        type();
     });
 
     function pType (x){   
-        $(".projectType").empty();
+        emptyP();
         console.log("repo URL for Mood" + projs[x].t)
         var projectDiv = $("<div class='container projectType'>");
         var pr1 = $("<div class='row'>");
@@ -76,7 +107,7 @@ $(document).ready(function(){
         
         var pr2 = $("<div class='row'>");
         var piDiv = $("<div class='col-md-9'>");
-        var pImg = $("<img class='prjImg responsive-img'>").attr("src", projs[x].image).attr("alt", "image of the project");
+        var pImg = $("<img class='prjImg img-fluid'>").attr("src", projs[x].img[0]).attr("alt", "image of the project");
         piDiv.append(pImg);
         pr2.append(piDiv);
         
@@ -164,6 +195,8 @@ $(document).ready(function(){
 
     $("#contactOpt").on("click", function(about) {
         about.preventDefault();
+        emptyP();
+
         $("#contactOpt").addClass("active")
         $("#contact").removeClass("displayNone")
         $("#about").addClass("displayNone")
