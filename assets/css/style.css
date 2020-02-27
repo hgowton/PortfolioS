@@ -6,6 +6,8 @@ header {
     background-color: #343a40;
     color: white;
     padding: 3px 0px 8px 20px;
+    font-family: 'Oxygen', ;
+    font-size: 30px;
 }
 
 body {
@@ -29,15 +31,16 @@ body {
 
 nav, .cards {
     background-color: black;
-    color: white;
+    color: #fefce2;
+    font-family: 'Roboto Condensed', ;
 }    
 a:link, a:visited {
     text-decoration: none;
-    color: white;
+    color: #fefce2;
 }    
 
-a:hover, a:active {
-    color: pink;
+a:hover, a:active, .navOptions:hover {
+    color: #fede01;
     text-decoration: none;
 }    
 
@@ -47,14 +50,14 @@ a:hover, a:active {
 }
 .navOptions {
     background-color: black;
-    color: white;
+    color: #fefce2;
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
 } 
 
 .extend {
-    height: 330px;
+    height: 400px;
     width: 100%
 }
 
@@ -90,7 +93,7 @@ a:hover, a:active {
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
-    color: #ffffff;
+    color: #fefce2;
     text-align: center;
     background: #4aaaa5;
     border-bottom: 0;
@@ -99,6 +102,8 @@ a:hover, a:active {
 footer {
     width: 100%;
     text-align: right;
+    position: fixed;
+    bottom: 0px;
 }
 
 /* CODE for media query with MAX WIDTH 980px */
