@@ -6,7 +6,8 @@ header {
     background-color: #343a40;
     color: white;
     padding: 3px 0px 8px 20px;
-    font-family: 'Oxygen', ;
+    /* font-family: 'Oxygen', ; */
+    font-family: 'Oxanium', ;
     font-size: 30px;
 }
 
@@ -68,6 +69,10 @@ a:hover, a:active, .navOptions:hover {
 .displayNone {
     display: none;
 }  
+
+.information {
+    font-family: 'Noto Sans KR', ;
+}
 
 .infoSize {
     padding: 20px 40px 0px 0px;
