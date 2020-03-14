@@ -20,7 +20,7 @@ $(document).ready(function(){
             d: "LIRI is a node App designed to function similar to SIRI on the iPhone.  Instead of utilizing speech recognition, LIRI takes in commands through terminal to provide specific data.",
             img: ["./assets/media/LIRIapp.png", "./assets/media/LIRIapp.png"],
             repo: "https://github.com/hgowton/LIRI",
-            actL: "#"},
+            actL: "https://github.com/hgowton/LIRI"},
             { t: "Trivia Game",
             d: "Test your knowledge of the largest biome on the planet.  Be careful to log in your answer before the clock hits 0.",
             img: ["./assets/media/oceanT.png", "./assets/media/trivia.jpg"],
