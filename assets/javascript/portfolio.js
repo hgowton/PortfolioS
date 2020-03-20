@@ -21,11 +21,17 @@ $(document).ready(function(){
             img: ["./assets/media/LIRIapp.png", "./assets/media/LIRIapp.png"],
             repo: "https://github.com/hgowton/LIRI",
             actL: "https://github.com/hgowton/LIRI"},
-            { t: "Trivia Game",
+        { t: "Trivia Game",
             d: "Test your knowledge of the largest biome on the planet.  Be careful to log in your answer before the clock hits 0.",
             img: ["./assets/media/oceanT.png", "./assets/media/trivia.jpg"],
-            repo: "https://github.com/hgowton/TriviaGame",
-            actL: "https://hgowton.github.io/TriviaGame/"}
+            repo: "https://github.com/hgowton/LIRI",
+            actL: "https://hgowton.github.io/LIRI/"},
+        { t: "Bamazon APP",
+            d: "The Bamazon application works in two parts to create an online store accessible through the terminal.  The customer side can view inventory.  Then make purchases based on the current stock.  From the manager side, you can view current and low inventory, add to inventory, and add new products.",
+            img: ["./assets/media/Bamazon.png", "./assets/media/Bamazon.png"],
+            repo: "https://github.com/hgowton/Bamazon",
+            actL: "https://github.com/hgowton/Bamazon"}
+
     ]
 
     console.log(projs[1].t);
