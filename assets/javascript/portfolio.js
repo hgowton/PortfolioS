@@ -30,7 +30,12 @@ $(document).ready(function(){
             d: "The Bamazon application works in two parts to create an online store accessible through the terminal.  The customer side can view inventory.  Then make purchases based on the current stock.  From the manager side, you can view current and low inventory, add to inventory, and add new products.",
             img: ["./assets/media/Bamazon.png", "./assets/media/Bamazon.png"],
             repo: "https://github.com/hgowton/Bamazon",
-            actL: "https://github.com/hgowton/Bamazon"}
+            actL: "https://github.com/hgowton/Bamazon"},
+        { t: "Friend Finder APP",
+            d: "Answer a few simple questions to determine which Stranger Things character most reflects your personality.",
+            img: ["./assets/media/friendFinder.png", "./assets/media/friendFinder.png"],
+            repo: "https://github.com/hgowton/friendFinder",
+            actL: "https://young-tundra-00852.herokuapp.com"}
 
     ]
 
