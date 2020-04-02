@@ -16,26 +16,31 @@ $(document).ready(function(){
             img: ["./assets/media/giphyAPI.png", "./assets/media/colors.jpg"],
             repo: "https://github.com/hgowton/GiphyAPI",
             actL: "https://hgowton.github.io/GiphyAPI/"},
-        { t: "LIRI APP",
-            d: "LIRI is a node App designed to function similar to SIRI on the iPhone.  Instead of utilizing speech recognition, LIRI takes in commands through terminal to provide specific data.",
-            img: ["./assets/media/LIRIapp.png", "./assets/media/LIRIapp.png"],
-            repo: "https://github.com/hgowton/LIRI",
-            actL: "https://github.com/hgowton/LIRI"},
         { t: "Trivia Game",
             d: "Test your knowledge of the largest biome on the planet.  Be careful to log in your answer before the clock hits 0.",
             img: ["./assets/media/oceanT.png", "./assets/media/trivia.jpg"],
             repo: "https://github.com/hgowton/LIRI",
             actL: "https://hgowton.github.io/LIRI/"},
+        { t: "Burgatory",
+            d: "The Burgatory App utilizes the MVC design pattern to produce a Full Stack application for ordering and devouring burgers.",
+            img: ["./assets/media/burgatory.png", "./assets/media/burgatory.png"],
+            repo: "https://github.com/hgowton/burger",
+            actL: "https://guarded-garden-11990.herokuapp.com/"},
+        { t: "Friend Finder APP",
+            d: "Answer a few simple questions to determine which Stranger Things character most reflects your personality.",
+            img: ["./assets/media/friendFinder.png", "./assets/media/friendFinder.png"],
+            repo: "https://github.com/hgowton/friendFinder",
+            actL: "https://young-tundra-00852.herokuapp.com"},
         { t: "Bamazon APP",
             d: "The Bamazon application works in two parts to create an online store accessible through the terminal.  The customer side can view inventory.  Then make purchases based on the current stock.  From the manager side, you can view current and low inventory, add to inventory, and add new products.",
             img: ["./assets/media/Bamazon.png", "./assets/media/Bamazon.png"],
             repo: "https://github.com/hgowton/Bamazon",
             actL: "https://github.com/hgowton/Bamazon"},
-        { t: "Friend Finder APP",
-            d: "Answer a few simple questions to determine which Stranger Things character most reflects your personality.",
-            img: ["./assets/media/friendFinder.png", "./assets/media/friendFinder.png"],
-            repo: "https://github.com/hgowton/friendFinder",
-            actL: "https://young-tundra-00852.herokuapp.com"}
+        { t: "LIRI APP",
+                d: "LIRI is a node App designed to function similar to SIRI on the iPhone.  Instead of utilizing speech recognition, LIRI takes in commands through terminal to provide specific data.",
+                img: ["./assets/media/LIRIapp.png", "./assets/media/LIRIapp.png"],
+                repo: "https://github.com/hgowton/LIRI",
+                actL: "https://github.com/hgowton/LIRI"},
 
     ]
 
@@ -73,16 +78,12 @@ $(document).ready(function(){
         var iProj = $("<p>").text("Click on any image below to be taken to one of my active project sites or click on a Project Name in the navigation bar to delve deeper into each one.")
         $("#projects").append(iProj);
 
-
+//Creates page information for each of the projects.
     for(i = 0; i < projs.length; i++) {
-        console.log("testing")
             var p = $("<div>").addClass("projs");
             var plink = $("<a target='_blank'>").attr("href", projs[i].actL)
             var pImage = $("<img class='image-fluid'>").attr("src", projs[i].img[1]).attr("alt", "static image of project").addClass("pMain");
-            // var titleP = $("<h3>").text(projs[i].t).addClass("titleP")
-            //check this out for understanding
             plink.append(pImage)
-            // plink.append(titleP)
             p.append(plink)
             $("#projects").append(p)
         }
