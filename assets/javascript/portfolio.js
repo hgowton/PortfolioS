@@ -67,8 +67,8 @@ $(document).ready(function(){
     });
 
     function emptyP (){        
-        $(".projectType").empty();
-        $("#projects").empty();
+        $(".projectType").empty();//does not exist
+        $("#projects").empty();//will not need?
     }
     
     function type (){
@@ -78,15 +78,19 @@ $(document).ready(function(){
         var iProj = $("<p>").text("Click on any image below to be taken to one of my active project sites or click on a Project Name in the navigation bar to delve deeper into each one.")
         $("#projects").append(iProj);
 
-//Creates page information for each of the projects.
+//Creates card for each projects based on projs array
     for(i = 0; i < projs.length; i++) {
-            var p = $("<div>").addClass("projs");
-            var plink = $("<a target='_blank'>").attr("href", projs[i].actL)
-            var pImage = $("<img class='image-fluid'>").attr("src", projs[i].img[1]).attr("alt", "static image of project").addClass("pMain");
-            plink.append(pImage)
-            p.append(plink)
-            $("#projects").append(p)
-        }
+        var card = $("<div>").addClass("card").attr("style", "width: 18rem;" ).append(
+        $("<img>").addClass("card-img-top image-fluid").attr("src", projs[i].img[0]).attr("alt", projs[i].t),
+        $("<div>").addClass("card-body"),
+        $("<h5>").addClass("card-title").text(projs[i].t),
+        $("<p>").addClass("card-text").text(projs[i].d),
+        $("<a>").addClass("btn btn-primary").attr("href", projs[i].actL).text("Active Link"),
+        $("<a>").addClass("btn btn-primary").attr("href", projs[i].repoL).text("Repo Link")
+        );
+
+        $("#projects").append(card);
+        };
     }
 
     $("#projectsOpt").on("click", function(project) {
