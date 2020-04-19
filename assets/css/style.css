@@ -122,7 +122,8 @@ a:hover, a:active, .navOptions:hover {
 
   .card-title {
       position: absolute;
-      top: 35%
+      top: 35%;
+      background-color: white;
   }
 
   .card-text {

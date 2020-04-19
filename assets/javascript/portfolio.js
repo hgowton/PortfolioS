@@ -6,7 +6,7 @@ $(document).ready(function(){
             img: ["./assets/media/mood1.png", "./assets/media/moodFood.jpg"],
             repo: "https://github.com/hgowton/MoodFood",
             actL: "https://hgowton.github.io/MoodFood/"},
-        { t: "Little League Logger",
+        { t: " ",
             d: "An MVP based application for a baseball team. This application keeps all team members and their family members up-to-date on upcoming, current, and past games.",
             img: ["./assets/media/littleLeague.png", "./assets/media/littleLeague.png"],
             repo: "https://github.com/hgowton/project2",
