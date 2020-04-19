@@ -6,6 +6,11 @@ $(document).ready(function(){
             img: ["./assets/media/mood1.png", "./assets/media/moodFood.jpg"],
             repo: "https://github.com/hgowton/MoodFood",
             actL: "https://hgowton.github.io/MoodFood/"},
+        { t: "Little League Logger",
+            d: "An MVP based application for a baseball team. This application keeps all team members and their family members up-to-date on upcoming, current, and past games.",
+            img: ["./assets/media/littleLeague.png", "./assets/media/littleLeague.png"],
+            repo: "https://github.com/hgowton/project2",
+            actL: "https://rocky-sea-86685.herokuapp.com/"},
         { t: "Humanitarian Game",
             d: "An interactive game, where each round the user needs to determine how many Humanitarian Points they can earn by helping each animal.  Reach the round goal and bank your points.  Bank enough points to become an Expert Humanitarian.",
             img: ["./assets/media/humanitarian.png", "./assets/media/pets.jpg"],
@@ -33,12 +38,12 @@ $(document).ready(function(){
             actL: "https://young-tundra-00852.herokuapp.com"},
         { t: "Bamazon APP",
             d: "The Bamazon application works in two parts to create an online store accessible through the terminal.  The customer side can view inventory.  Then make purchases based on the current stock.  From the manager side, you can view current and low inventory, add to inventory, and add new products.",
-            img: ["./assets/media/Bamazon.png", "./assets/media/Bamazon.png"],
+            img: ["./assets/media/bamazon.gif", "./assets/media/Bamazon.png"],
             repo: "https://github.com/hgowton/Bamazon",
             actL: "https://github.com/hgowton/Bamazon"},
         { t: "LIRI APP",
                 d: "LIRI is a node App designed to function similar to SIRI on the iPhone.  Instead of utilizing speech recognition, LIRI takes in commands through terminal to provide specific data.",
-                img: ["./assets/media/LIRIapp.png", "./assets/media/LIRIapp.png"],
+                img: ["./assets/media/liri.gif", "./assets/media/LIRIapp.png"],
                 repo: "https://github.com/hgowton/LIRI",
                 actL: "https://github.com/hgowton/LIRI"},
 
@@ -48,27 +53,21 @@ $(document).ready(function(){
 
     $("#aboutOpt").on("click", function(about) {
         about.preventDefault();
-        emptyP();
-
         $("#aboutOpt").addClass("active")
         $("#about").removeClass("displayNone")
         $("#contact").addClass("displayNone")
         $("#projects").addClass("displayNone")
-        $("#projectsOpt").removeClass("active")
+        $("#typePro").addClass("displayNone")
         $("#contactOpt").removeClass("active")
     });
-
-    function emptyP (){        
-        $(".projectType").empty();//does not exist
-        $("#projects").empty();//will not need?
-    }
     
     function type (){
-        emptyP();
+        $("#typePro").empty();
+        $("#projects").empty();
         var tProj = $("<h3>").text("Projects");
         $("#projects").append(tProj);
-        var iProj = $("<p>").text("Click on any image below to be taken to one of my active project sites or click on a Project Name in the navigation bar to delve deeper into each one.")
-        $("#projects").append(iProj);
+        // var iProj = $("<p>").text("Click on any image below to be taken to one of my active project sites or click on a Project Name in the navigation bar to delve deeper into each one.")
+        // $("#projects").append(iProj);
 
 //Creates card for each projects based on projs array
     for(i = 0; i < projs.length; i++) {
@@ -81,15 +80,15 @@ $(document).ready(function(){
         $("<a>").addClass("btn btn-primary").attr("href", projs[i].repo).attr("target", "_blank").text("Repo Link")
         );
 
-        $("#projects").append(card);
+        $("#typePro").append(card);
         };
     }
 
     $("#projectsOpt").on("click", function(project) {
         project.preventDefault();
-        emptyP();
         $("#projectsOpt").addClass("active")
         $("#projects").removeClass("displayNone")
+        $("#typePro").removeClass("displayNone")
         $("#about").addClass("displayNone")
         $("#contact").addClass("displayNone")
         $("#aboutOpt").removeClass("active")
@@ -99,13 +98,11 @@ $(document).ready(function(){
 
     $("#contactOpt").on("click", function(about) {
         about.preventDefault();
-        emptyP();
-
         $("#contactOpt").addClass("active")
         $("#contact").removeClass("displayNone")
         $("#about").addClass("displayNone")
         $("#projects").addClass("displayNone")
-        $("#projectsOpt").removeClass("active")
+        $("#typePro").addClass("displayNone")
         $("#aboutOpt").removeClass("active")
     });
 });
