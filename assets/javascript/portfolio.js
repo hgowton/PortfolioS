@@ -40,12 +40,12 @@ $(document).ready(function(){
             d: "The Bamazon application works in two parts to create an online store accessible through the terminal.  The customer side can view inventory.  Then make purchases based on the current stock.  From the manager side, you can view current and low inventory, add to inventory, and add new products.",
             img: ["./assets/media/bamazon.gif", "./assets/media/Bamazon.png"],
             repo: "https://github.com/hgowton/Bamazon",
-            actL: "https://github.com/hgowton/Bamazon"},
+            actL: "https://www.youtube.com/watch?v=HcRQrc2g8SU&list=UUtPK4DmGjzHJeJGD25VkwSg&index=22"},
         { t: "LIRI APP",
                 d: "LIRI is a node App designed to function similar to SIRI on the iPhone.  Instead of utilizing speech recognition, LIRI takes in commands through terminal to provide specific data.",
                 img: ["./assets/media/liri.gif", "./assets/media/LIRIapp.png"],
                 repo: "https://github.com/hgowton/LIRI",
-                actL: "https://github.com/hgowton/LIRI"},
+                actL: "https://drive.google.com/file/d/17qqnN74faBnxMIz8NMGhwjkg8aWd-fR_/view"},
 
     ]
 
