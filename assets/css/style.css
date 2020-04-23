@@ -33,15 +33,17 @@ h2 {
     clip-path: ellipse(40% 45% at 50% 50%);
     shape-outside: ellipse(130px 110px at 50% 50%);
     margin-left: 70px;
+    text-align: left;
 }
 
 .quote {
-    margin: 15px 0px 0px 95px;
-    font-size: 12px;
+    margin: 15px 0px 0px 110px;
+    font-size: 14px;
+    text-align: left;
 }
 
 .title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
