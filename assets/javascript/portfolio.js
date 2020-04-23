@@ -49,8 +49,6 @@ $(document).ready(function(){
 
     ]
 
-    console.log(projs[1].t);
-
     $("#aboutOpt").on("click", function(about) {
         about.preventDefault();
         $("#aboutOpt").addClass("active")
@@ -66,8 +64,6 @@ $(document).ready(function(){
         $("#projects").empty();
         var tProj = $("<h3>").text("Projects");
         $("#projects").append(tProj);
-        // var iProj = $("<p>").text("Click on any image below to be taken to one of my active project sites or click on a Project Name in the navigation bar to delve deeper into each one.")
-        // $("#projects").append(iProj);
 
 //Creates card for each projects based on projs array
     for(i = 0; i < projs.length; i++) {

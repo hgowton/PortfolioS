@@ -27,6 +27,24 @@ h2 {
     shape-outside: ellipse(130px 110px at 50% 50%);
 }
 
+.colleagues {
+    padding: 2px;
+    width: 20%;
+    clip-path: ellipse(40% 45% at 50% 50%);
+    shape-outside: ellipse(130px 110px at 50% 50%);
+    margin-left: 70px;
+}
+
+.quote {
+    margin: 15px 0px 0px 95px;
+    font-size: 12px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .goTo {
     background: linear-gradient(to right, #0062E6, #33AEFF);
     border-radius: 5px;
