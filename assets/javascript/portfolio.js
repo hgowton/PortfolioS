@@ -11,6 +11,12 @@ $(document).ready(function(){
             img: ["./assets/media/littleLeague.png", "./assets/media/littleLeague.png"],
             repo: "https://github.com/hgowton/project2",
             actL: "https://rocky-sea-86685.herokuapp.com/"},
+        { t: "Pew Research Scraper",
+        d: "Enables user to scrape the lastest Pew Research Articles focused in America. Users can save articles for future reading.  Once an article is saved, the user can compile personal notes on the article.",
+        img: ["./assets/media/scraper.gif", "/assets/media/scraper.gif"],
+        repo: "https://github.com/hgowton/ArticleNotes",
+        actL: "https://gentle-ocean-77475.herokuapp.com/articles"},
+
         { t: "Humanitarian Game",
             d: "An interactive game, where each round the user needs to determine how many Humanitarian Points they can earn by helping each animal.  Reach the round goal and bank your points.  Bank enough points to become an Expert Humanitarian.",
             img: ["./assets/media/humanitarian.png", "./assets/media/pets.jpg"],
