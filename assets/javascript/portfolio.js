@@ -16,7 +16,11 @@ $(document).ready(function(){
         img: ["./assets/media/scraper.gif", "/assets/media/scraper.gif"],
         repo: "https://github.com/hgowton/ArticleNotes",
         actL: "https://gentle-ocean-77475.herokuapp.com/articles"},
-
+        { t: "Marvel's Memory Click",
+        d: "A memory game created in React.  Pay close attention to which characters you click.  Your score will increase, as long as you click each character ONCE.  Select a character you've already chosen, and start back at the beginning!",
+        img: ["./assets/media/marvelClick.png", "/assets/media/marvelClick.png"],
+        repo: "https://github.com/hgowton/memoryGame",
+        actL: "https://hgowton.github.io/memoryGame/"},
         { t: "Humanitarian Game",
             d: "An interactive game, where each round the user needs to determine how many Humanitarian Points they can earn by helping each animal.  Reach the round goal and bank your points.  Bank enough points to become an Expert Humanitarian.",
             img: ["./assets/media/humanitarian.png", "./assets/media/pets.jpg"],
